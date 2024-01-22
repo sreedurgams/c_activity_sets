@@ -1,0 +1,13 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem01.c, line 5.
+(gdb) r
+Starting program: C:\Users\sreee\OneDrive\Documents\GitHub\c_activity_sets\set01/a.exe
+[New Thread 22036.0x2c40]
+[New Thread 22036.0x35fc]
+
+Breakpoint 1, main () at problem01.c:5
+5           printf("sreedurga");
+(gdb) s
+sreedurga6          return 0;
+(gdb) s
+7       }(gdb)
