@@ -1,0 +1,21 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem02.c, line 6.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set01/a.exe
+
+[New Thread 11916.0x15e8]
+[New Thread 11916.0xcd0]
+
+Breakpoint 1, main () at problem02.c:6
+6           a=5;
+(gdb) s
+7           b=4;
+(gdb) s
+8           sum=a+b;
+(gdb) s
+9           printf("%d",sum);
+(gdb) s
+910         return 0;
+(gdb) s
+12      }
+(gdb)
