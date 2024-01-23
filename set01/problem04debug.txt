@@ -1,0 +1,35 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem04.c, line 11.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set01/a.exe 
+[New Thread 17592.0x55a4]
+[New Thread 17592.0x2134]
+
+Breakpoint 1, main () at problem04.c:11
+11          input(&a, &b);
+(gdb) s
+input (a=0x61ff1c, b=0x61ff18) at problem04.c:20
+20          printf("Enter two numbers: ");
+(gdb) s
+Enter two numbers: 21       scanf("%d %d", a, b);
+(gdb) s
+s
+22      }
+(gdb) s
+main () at problem04.c:12
+12          add(a, b, &sum);
+(gdb) s
+add (a=2568192, b=0, sum=0x61ff14) at problem04.c:26
+26          *sum = a + b;
+(gdb) s
+27      }
+(gdb) s
+main () at problem04.c:13
+13          output(a, b, sum);
+(gdb) s
+output (a=2568192, b=0, sum=2568192) at problem04.c:31
+31          printf("The sum of %d and %d is %d\n", a, b, sum);
+(gdb) s
+The sum of 2568192 and 0 is 2568192
+32      }
+(gdb) 
