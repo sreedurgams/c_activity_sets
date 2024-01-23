@@ -1,0 +1,41 @@
+(gdb) b main
+Breakpoint 1 at 0x40146f: file problem06.c, line 11.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set01/problem06.exe
+[New Thread 16696.0x814]
+[New Thread 16696.0x2c04]
+
+Breakpoint 1, main () at problem06.c:11
+11          input(&a, &b, &c);
+(gdb) s
+input (a=0x61ff1c, b=0x61ff18, c=0x61ff14) at problem06.c:20
+20          printf("Enter three numbers: ");
+(gdb) s
+Enter three numbers: 21     scanf("%d %d %d", a, b, c);
+(gdb) s
+s
+22      }
+(gdb) s
+main () at problem06.c:12
+12          compare(a, b, c, &largest);
+(gdb) s
+compare (a=2580480, b=0, c=15078920, largest=0x61ff10)
+    at problem06.c:26
+26          if (a > b && a > c)
+(gdb) s
+28          else if (b > a && b > c)
+(gdb) s
+31              *largest = c;
+(gdb) s
+32      }
+(gdb) s
+main () at problem06.c:13
+13          output(a, b, c, largest);
+(gdb) s
+output (a=2580480, b=0, c=15078920, largest=15078920)
+    at problem06.c:36
+36          printf("The largest of %d, %d, and %d is %d\n", a, b, c, largest);
+(gdb) s
+The largest of 2580480, 0, and 15078920 is 15078920
+37      }
+(gdb)
