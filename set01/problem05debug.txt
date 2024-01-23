@@ -1,0 +1,66 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem05.c, line 11.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set01/problem05.exe
+[New Thread 20092.0x517c]
+[New Thread 20092.0x629c]
+
+Breakpoint 1, main () at problem05.c:11
+11          a = input();
+(gdb) s
+input () at problem05.c:26
+26          printf("Enter a number: ");
+(gdb) s
+Enter a number: 27          scanf("%d", &num);
+(gdb) s
+s
+29          return num;
+(gdb) s
+30      }
+(gdb) s
+main () at problem05.c:12
+12          b = input();
+(gdb) s
+input () at problem05.c:26
+26          printf("Enter a number: ");
+(gdb) s
+Enter a number: 27          scanf("%d", &num);
+(gdb) s
+29          return num;
+(gdb) s
+30      }
+(gdb) s
+main () at problem05.c:13
+13          c = input();
+(gdb) s
+input () at problem05.c:26
+26          printf("Enter a number: ");
+(gdb) s
+Enter a number: 27          scanf("%d", &num);
+(gdb) s
+29          return num;
+(gdb) s
+30      }
+(gdb) s
+main () at problem05.c:15
+15          largest = compare(a, b, c);
+(gdb) s
+compare (a=6422476, b=6422476, c=6422476) at problem05.c:34
+34          if (a > b && a > c)
+(gdb) s
+36          else if (b > a && b > c)
+(gdb) s
+39              return c;
+(gdb) s
+40      }
+(gdb) s
+main () at problem05.c:17
+17          output(a, b, c, largest);
+(gdb) s
+output (a=6422476, b=6422476, c=6422476, largest=6422476)
+    at problem05.c:44
+44          printf("The largest of %d, %d, and %d is %d\n", a, b, c, largest);
+(gdb) s
+The largest of 6422476, 6422476, and 6422476 is 6422476
+45      }
+(gdb)
