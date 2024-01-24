@@ -1,0 +1,45 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem09.c, line 10.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set01/problem09.exe
+[New Thread 1752.0x12a8]
+[New Thread 1752.0x2b9c]
+
+Breakpoint 1, main () at problem09.c:10
+10          n = input();
+(gdb) s
+input () at problem09.c:18
+18          printf("Enter a number: ");
+(gdb) s
+Enter a number: 19          scanf("%f", &n);
+(gdb) s
+s
+20          return n;
+(gdb) s
+21      }
+(gdb) s
+main () at problem09.c:11
+11          sqrroot = square_root(n);
+(gdb) s
+square_root (n=0) at problem09.c:24
+24          float x = n;
+(gdb) s
+25          float y = 1;
+(gdb) s
+26          float e = 0.000001;
+(gdb) s
+27          while (x - y > e) {
+(gdb) s
+31          return x;
+(gdb) s
+32      }
+(gdb) s
+main () at problem09.c:12
+12          output(n, sqrroot);
+(gdb) s
+output (n=0, sqrroot=0) at problem09.c:35
+35          printf("The square root of %.2f is %.6f\n", n, sqrroot);   
+(gdb) s
+The square root of 0.00 is 0.000000
+36      }
+(gdb)
