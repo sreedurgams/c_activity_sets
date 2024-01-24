@@ -2,8 +2,8 @@
 Breakpoint 1 at 0x40146e: file problem05.c, line 11.
 (gdb) r
 Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set01/problem05.exe
-[New Thread 20092.0x517c]
-[New Thread 20092.0x629c]
+[New Thread 12324.0x1448]
+[New Thread 12324.0x267c]
 
 Breakpoint 1, main () at problem05.c:11
 11          a = input();
@@ -46,11 +46,9 @@ main () at problem05.c:15
 15          largest = compare(a, b, c);
 (gdb) s
 compare (a=6422476, b=6422476, c=6422476) at problem05.c:34
-34          if (a > b && a > c)
+34          if (a >= b && a >= c)
 (gdb) s
-36          else if (b > a && b > c)
-(gdb) s
-39              return c;
+35              return a;
 (gdb) s
 40      }
 (gdb) s
