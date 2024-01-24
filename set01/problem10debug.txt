@@ -1,0 +1,62 @@
+(gdb) b main
+Breakpoint 1 at 0x401471: file problem10.c, line 10.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set01/problem10.exe 
+[New Thread 23360.0x2e60]
+[New Thread 23360.0x5a18]
+
+Breakpoint 1, main () at problem10.c:10
+10          input_two_strings(string1,string2);
+(gdb) s
+input_two_strings (string1=0x61feb8 "\034"Euü_a", 
+    string2=0x61fe54 "?lÄÜ"_a") at problem10.c:17
+17          printf("enter the first string :");
+(gdb) s
+enter the first string :18          scanf("%s",string1);
+(gdb) s
+s
+19          printf("enter the second string :");
+(gdb) s
+enter the second string :20         scanf("%s",string2);
+(gdb) s
+s
+21       }
+(gdb) s
+main () at problem10.c:11
+11          result=stringcompare(string1,string2);
+(gdb) s
+stringcompare (string1=0x61feb8 "s", string2=0x61fe54 "s")
+    at problem10.c:24
+24          int a=0;
+(gdb) s
+25          for(int i=0;string1[i]!='\0'|| string2[i]!='\0';i++)       
+(gdb) s
+27              if (string1[i]>string2[i])
+(gdb) s
+33               else if(string1[i]<string2[i])
+(gdb) s
+39               a=2;
+(gdb) s
+25          for(int i=0;string1[i]!='\0'|| string2[i]!='\0';i++)       
+(gdb) s
+42          return a;
+(gdb) s
+43       }
+(gdb) s
+main () at problem10.c:12
+12          output(string1,string2,result);
+(gdb) s
+output (string1=0x61feb8 "s", string2=0x61fe54 "s", result=2)
+    at problem10.c:46
+46          if(result==0)
+(gdb) s
+50          else if(result==1)
+(gdb) s
+56              printf("both are equal");
+(gdb) s
+both are equal58         }(gdb) s
+main () at problem10.c:13
+13          return 0;
+(gdb) s
+14       }
+(gdb) 
