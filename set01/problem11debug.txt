@@ -1,0 +1,55 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem11.c, line 14.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set01/problem11.exe
+[New Thread 8100.0x24fc]
+[New Thread 8100.0x878]
+
+Breakpoint 1, main () at problem11.c:14
+14          a = input_complex();
+(gdb) s
+input_complex () at problem11.c:23
+23          printf("Enter the real and imaginary parts of a complex number: ");
+(gdb) s
+Enter the real and imaginary parts of a complex number: 24          scanf("%f %f", &c.real, &c.imaginary);
+(gdb) s
+s
+25          return c;
+(gdb) s
+26      }
+(gdb) s
+main () at problem11.c:15
+15          b = input_complex();
+(gdb) s
+input_complex () at problem11.c:23
+23          printf("Enter the real and imaginary parts of a complex number: ");
+(gdb) s
+Enter the real and imaginary parts of a complex number: 24          scanf("%f %f", &c.real, &c.imaginary);
+(gdb) s
+25          return c;
+(gdb) s
+26      }
+(gdb) s
+main () at problem11.c:16
+16          sum = add_complex(a, b);
+(gdb) s
+add_complex (a=..., b=...) at problem11.c:30
+30          sum.real = a.real + b.real;
+(gdb) s
+31          sum.imaginary = a.imaginary + b.imaginary;
+(gdb) s
+32          return sum;
+(gdb) s
+33      }
+(gdb) s
+main () at problem11.c:17
+17          output(a, b, sum);
+(gdb) s
+output (a=..., b=..., sum=...) at problem11.c:37
+37                 a.real, a.imaginary, b.real, b.imaginary, sum.real, sum.imaginary);
+(gdb) s
+36          printf("The sum of (%.2f + %.2fi) and (%.2f + %.2fi) is (%.2f + %.2fi)\n",
+(gdb) s
+The sum of (242762459555502300000000000000000.00 + 242761956642361340000000000000000.00i) and (242762459555502300000000000000000.00 + 242761956642361340000000000000000.00i) is (485524919111004600000000000000000.00 + 485523913284722680000000000000000.00i)
+38      }
+(gdb)
