@@ -1,0 +1,39 @@
+gdb) b main
+Breakpoint 1 at 0x401477: file problem08.c, line 9.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set01/problem08.exe
+[New Thread 10776.0x328c]
+[New Thread 10776.0x3b24]
+
+Breakpoint 1, 0x00401477 in main () at problem08.c:9
+9        {
+(gdb) n
+10          int n = input_array_size();
+(gdb) n
+Enter the number of elements you want to add: n
+11          int a[n];
+(gdb) n
+12          input_array(n, a);
+(gdb) n
+13          int sum = sum_n_array(n, a);
+(gdb) n
+14          output(n, a, sum);
+(gdb) n
+The sum of the following 0 numbers:  is 0
+15          return 0;
+(gdb) n
+16      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 10776] will be killed.
+
+Quit anyway? (y or n) y
+
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
