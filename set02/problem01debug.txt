@@ -1,0 +1,26 @@
+(gdb) b main
+Breakpoint 1 at 0x40154d: file problem01.c, line 31.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set02/problem01.exe 
+[New Thread 1888.0xddc]
+[New Thread 1888.0x44c4]
+
+Breakpoint 1, main () at problem01.c:31
+31          a = input_side();
+(gdb) n
+Enter the length of a side: n
+32          b = input_side();
+(gdb) n
+Enter the length of a side: 33      c = input_side();
+(gdb) n
+Enter the length of a side: 35      isscalene = check_scalene(a, b, c);
+(gdb) n
+36          output(a, b, c, isscalene);
+(gdb) n
+Side a: 6422476
+Side b: 6422476
+Side c: 6422476
+The triangle with sides 6422476, 6422476, and 6422476 is not a scalene triangle.
+38          return 0;
+(gdb) n
+39      }(gdb) n
