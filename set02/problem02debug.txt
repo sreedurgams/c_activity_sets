@@ -1,0 +1,31 @@
+(gdb) b main
+Breakpoint 1 at 0x40154d: file C:\Users\sreee\csecondsem\c_activity_sets\set02\problem02.c, line 32.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set02/problem02.exe 
+[New Thread 22588.0x106c]
+[New Thread 22588.0x3a60]
+
+Breakpoint 1, main () at C:\Users\sreee\csecondsem\c_activity_sets\set02\problem02.c:32
+warning: Source file is more recent than executable.
+32          a = input_side();
+(gdb) n
+Enter the length of a side: 4
+33          b = input_side();
+(gdb) n
+Enter the length of a side: 5
+34          c = input_side();
+(gdb) n
+Enter the length of a side: 5
+36          isscalene = check_scalene(a, b, c);
+(gdb) n
+37          output(a, b, c, isscalene);
+(gdb) n
+Side a: 4
+Side b: 5
+Side c: 5
+The triangle with sides 4, 5, and 5 is not a scalene triangle.
+39          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 22588) exited normally]
+(gdb) q
