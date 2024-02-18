@@ -1,0 +1,19 @@
+(gdb) b main 
+Breakpoint 1 at 0x40151b: file C:\Users\sreee\csecondsem\c_activity_sets\set02\problem03.c, line 34.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set02/problem03.exe 
+[New Thread 13752.0x2918]
+[New Thread 13752.0xb10]
+
+Breakpoint 1, main () at C:\Users\sreee\csecondsem\c_activity_sets\set02\problem03.c:34
+34          number = input_number();
+(gdb) n
+Enter a number: n
+35          result = is_composite(number);
+(gdb) n
+36          output(number, result);
+(gdb) n
+6422476 is a composite number.
+38          return 0;
+(gdb) n
+39      }(gdb) n
