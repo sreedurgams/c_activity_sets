@@ -1,0 +1,22 @@
+(gdb) b main
+Breakpoint 1 at 0x40151c: file C:\Users\sreee\csecondsem\c_activity_sets\set02\problem06.c, line 27.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set02/problem06.exe
+[New Thread 13380.0x1780]
+[New Thread 13380.0x4db0]
+
+Breakpoint 1, main ()
+    at C:\Users\sreee\csecondsem\c_activity_sets\set02\problem06.c:27  
+warning: Source file is more recent than executable.
+27          input_string(str);
+(gdb) n
+Enter a string: hello
+28          str_reverse(str, rev_str);
+(gdb) n
+29          output(str, rev_str);
+(gdb) n
+Original string: hello
+Reversed string: olleh
+31          return 0;
+(gdb) n
+32      }(gdb)
