@@ -1,0 +1,22 @@
+(gdb) b main
+Breakpoint 1 at 0x4014eb: file C:\Users\sreee\csecondsem\c_activity_sets\set02\problem05.c, line 28.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set02/problem05.exe
+[New Thread 12844.0x1d44]
+[New Thread 12844.0x3c78]
+
+Breakpoint 1, main ()
+    at C:\Users\sreee\csecondsem\c_activity_sets\set02\problem05.c:28
+28          num1 = input();
+(gdb) n
+Enter a number: n
+29          num2 = input();
+(gdb) n
+Enter a number: 30          gcd = find_gcd(num1, num2);
+(gdb) n
+31          output(num1, num2, gcd);
+(gdb) n
+GCD of 6422476 and 6422476 is 6422476
+33          return 0;
+(gdb) n
+34      }(gdb) n
