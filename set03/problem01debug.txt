@@ -1,0 +1,22 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file C:\Users\sreee\csecondsem\c_activity_sets\set03\problem01.c, line 13.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set03/problem01.exe
+[New Thread 22392.0x5f64]
+[New Thread 22392.0x5470]
+
+Breakpoint 1, main () at C:\Users\sreee\csecondsem\c_activity_sets\set03\problem01.c:13
+13          input(&x1, &y1, &x2, &y2);
+(gdb) n
+Enter coordinates of first point (x1 y1): 3
+n
+Enter coordinates of second point (x2 y2): 16       float distance = find_distance(x1, y1, x2, y2);
+(gdb) n
+19          output(x1, y1, x2, y2, distance);
+(gdb) n
+Coordinates of first point: (3.00, 0.00)
+Coordinates of second point: (0.00, 0.00)
+Distance between the points: 3.00
+21          return 0;
+(gdb) n
+22      }
