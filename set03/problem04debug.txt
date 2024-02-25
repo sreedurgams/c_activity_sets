@@ -1,0 +1,19 @@
+(gdb) b main
+Breakpoint 1 at 0x40150b: file C:\Users\sreee\csecondsem\c_activity_sets\set03\problem04.c, line 32.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set03/problem04.exe
+[New Thread 9316.0x16c]
+[New Thread 9316.0x55c0]
+
+Breakpoint 1, main () at C:\Users\sreee\csecondsem\c_activity_sets\set03\problem04.c:32
+32          n = input();
+(gdb) n
+Enter a number: 6
+34          int fibo = find_fibo(n);
+(gdb) n
+36          output(n, fibo);
+(gdb) n
+The 6th Fibonacci number is: 8
+37          return 0;
+(gdb) n
+38      }(gdb) n
