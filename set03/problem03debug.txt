@@ -1,0 +1,20 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file C:\Users\sreee\csecondsem\c_activity_sets\set03\problem03.c, line 8.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set03/problem03.exe 
+[New Thread 25004.0x1cc0]
+[New Thread 25004.0x4128]
+
+Breakpoint 1, main () at C:\Users\sreee\csecondsem\c_activity_sets\set03\problem03.c:8
+8           int number = input_number();
+(gdb) n
+Enter a number: 4
+9           int prime_result = is_prime(number);
+(gdb) n
+10          output(number, prime_result);
+(gdb) n
+4 is not a prime number.
+11          return 0;
+(gdb) n
+12      }
+(gdb) n
