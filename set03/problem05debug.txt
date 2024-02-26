@@ -1,0 +1,26 @@
+(gdb) b main
+Breakpoint 1 at 0x4015c8: file C:\Users\sreee\csecondsem\c_activity_sets\set03\problem05.c, line 41.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set03/problem05.exe 
+[New Thread 17048.0x438]
+[New Thread 17048.0x6038]
+
+Breakpoint 1, 0x004015c8 in main () at C:\Users\sreee\csecondsem\c_activity_sets\set03\problem05.c:41
+41      int main() {
+(gdb) n
+42          int size = input_array_size();
+(gdb) n
+Enter the size of the array: 3
+43          int array[size];
+(gdb) n
+45          init_array(size, array);
+(gdb) n
+46          eratosthenes_sieve(size, array);
+(gdb) n
+47          output(size, array);
+(gdb) n
+Prime numbers up to 3 are:
+2 3
+49          return 0;
+(gdb) n
+50      }(gdb) n
