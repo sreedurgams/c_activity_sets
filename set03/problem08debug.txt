@@ -1,0 +1,29 @@
+(gdb) b main
+Breakpoint 1 at 0x40169e: file C:\Users\sreee\csecondsem\c_activity_sets\set03\problem08.c, line 61.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set03/problem08.exe 
+[New Thread 26444.0xc20]
+[New Thread 26444.0x4c20]
+
+Breakpoint 1, main () at C:\Users\sreee\csecondsem\c_activity_sets\set03\problem08.c:61
+61          input_polygon(&poly);
+(gdb) n
+Enter the number of sides of the polygon: 6
+Enter the coordinates of the vertices:
+Vertex 1 (x y): 8
+ 
+n
+Vertex 2 (x y): Vertex 3 (x y): Vertex 4 (x y): Vertex 5 (x y): Vertex 6 (x y): 62          find_perimeter(&poly);
+(gdb) n
+63          output(poly);
+(gdb) n
+Polygon with 6 sides:
+Vertex 1: (8.00, 532110575756251070000000000000000.00)
+Vertex 2: (8.00, 532110575756251070000000000000000.00)
+Vertex 3: (8.00, 532110575756251070000000000000000.00)
+Vertex 4: (8.00, 532110575756251070000000000000000.00)
+Vertex 5: (8.00, 532110575756251070000000000000000.00)
+Vertex 6: (8.00, 532110575756251070000000000000000.00)
+Perimeter: 0.00
+64          return 0;
+(gdb)
