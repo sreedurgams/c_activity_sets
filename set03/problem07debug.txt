@@ -1,0 +1,24 @@
+(gdb) b main
+Breakpoint 1 at 0x4015b6: file C:\Users\sreee\csecondsem\c_activity_sets\set03\problem07.c, line 44.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set03/problem07.exe 
+[New Thread 15796.0x2770]
+[New Thread 15796.0x338c]
+
+Breakpoint 1, main () at C:\Users\sreee\csecondsem\c_activity_sets\set03\problem07.c:44
+44          Line line = input_line();
+(gdb) n
+Enter coordinates for point 1:
+Enter x coordinate: 4
+Enter y coordinate: 2
+Enter coordinates for point 2:
+Enter x coordinate: 7
+Enter y coordinate: 8
+45          find_length(&line);
+(gdb) n
+46          output(line);
+(gdb) n
+Point 1: (4.00, 2.00)
+Point 2: (7.00, 8.00)
+Distance between the points: 6.71
+47          return 0;
