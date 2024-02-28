@@ -1,0 +1,20 @@
+(gdb) b main
+Breakpoint 1 at 0x401530: file C:\Users\sreee\csecondsem\c_activity_sets\set04\problem01.c, line 24.
+(gdb) r
+Starting program: C:\Users\sreee\csecondsem\c_activity_sets\set04/problem01.exe
+[New Thread 11808.0x3fc4]
+[New Thread 11808.0x21d0]
+
+Breakpoint 1, main ()
+    at C:\Users\sreee\csecondsem\c_activity_sets\set04\problem01.c:24
+24          input(&num1, &den1, &num2, &den2);
+(gdb) n
+Enter first fraction (numerator denominator): 4/6
+Enter second fraction (numerator denominator): 25        add(num1, den1, num2, den2, &res_num, &res_den);   
+(gdb) n
+26          output(num1, den1, num2, den2, res_num, res_den);
+(gdb) n
+The sum of 4/6422356 and 4201088/1976664685 is -785105996/-990486844
+28          return 0;
+(gdb) n
+29      }(gdb)
